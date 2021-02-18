@@ -9,7 +9,8 @@ EXPOSE 8888 8889
 
 
 # Install Scrapoxy
-RUN npm install -g scrapoxy
+ADD . .
+RUN npm install -g .
 
 
 # Add configuration
